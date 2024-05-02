@@ -2,91 +2,86 @@ html {
     font-family: sans-serif;
   }
   
-  body {
+body {
+    background-color: #300135;
+    color: white;
     width: 300px;
     max-width: 750px;
     min-width: 480px;
     margin: 0 auto;
-    background-color: #212121;
   }
-  
-  .lastResult {
-    color: white;
-    padding: 7px;
+#wrapper {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: auto;
+    padding: 5px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: #474747;
+    font-size: 1.5rem;
   }
-  
-  .guesses {
-    color: white;
-    padding: 7px;
-  }
-  
-  button {
-    background-color: #141414;
-    color: #fff;
-    width: 250px;
-    height: 50px;
-    border-radius: 25px;
-    font-size: 30px;
-    border-style: none;
-    margin-top: 30px;
-    /* margin-left: 50px; */
-  }
-  
-  #subt {
+.content{
+  background-color: darkblue;
+  border-radius: 20px;
+}
+.content > h1 {
     background-color: #161616;
+    padding: 5px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1rem;
+    text-align: center;
+  } 
+form{
+  background-color: rgb(29, 10, 1);
+  border-radius: 15px;
+  padding: 5px;
+} 
+  #subt {
+    background-color: #3308f5;
     color: #ffffff;
     width: 200px;
-    height: 50px;
+    height: 55px;
     border-radius: 10px;
     font-size: 20px;
     border-style: none;
     margin-top: 50px;
+    transition: all .2s ease-in-out;
     /* margin-left: 75px; */
   }
+  #subt:hover{
+    transform: scale(1.1);
+  }
+
+  #guess {
+    font-size: 55px;
+    margin-top: 120px;
+  }
+  
   
   #guessField {
     color: #000;
     width: 250px;
     height: 50px;
     font-size: 30px;
-    border-style: none;
+    border-radius: 10px;
     margin-top: 25px;
-  
-    /* margin-left: 50px; */
-    border: 5px solid #6c6d6d;
+    border: 2px solid #6c6d6d;
     text-align: center;
   }
-  
-  #guess {
-    font-size: 55px;
-    /* margin-left: 90px; */
-    margin-top: 120px;
-    color: #fff;
+  .resultParas{
+    background-color: black !important;
+    padding: 5px;
+    margin-top: 8px;
+    border-radius: 10px;
   }
-  
-  .guesses {
-    background-color: #7a7a7a;
+  .resultParas > p{
+    font-size: 1.4rem;
+    font-weight: bold;
   }
-  
-  #wrapper {
-    box-sizing: border-box;
-    text-align: center;
-    width: 450px;
-    height: 550px;
-    background-color: #474747;
-    color: #fff;
-    font-size: 25px;
-  }
-  
-  h1 {
-    background-color: #161616;
-  
-    color: #fff;
-    text-align: center;
-  }
-  
-  p {
-    font-size: 16px;
-    text-align: center;
-  }
-  

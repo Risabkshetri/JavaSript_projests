@@ -4,6 +4,12 @@ html {
   
   span {
     display: block;
+    border-radius: 50%;
+    transition: all .1s ease-in-out;
+  }
+  
+  span:hover {
+    transform: scale(1.2);
   }
   .canvas {
     margin: 100px auto 100px;
