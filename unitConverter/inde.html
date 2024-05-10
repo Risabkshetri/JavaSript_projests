@@ -1,0 +1,246 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1.0"> 
+	<title>GFG Converter</title> 
+	<link rel="stylesheet" href="./style.css"> 
+</head> 
+
+<body> 
+	<div class="main"> 
+		<h1 class="title">GeeksforGeeks</h1> 
+		<h2>Unit Converter using 
+			HTML CSS and JavaScript 
+		</h2> 
+		<h5 class="subtitle">Select Category</h5> 
+		<select id="conversionCategory"
+				class="select-category"> 
+			<option value=""> 
+				- Select - 
+			</option> 
+			<option value="temperature"> 
+				Temperature 
+			</option> 
+			<option value="area"> 
+				Area 
+			</option> 
+			<option value="weight"> 
+				Weight 
+			</option> 
+			<option value="length"> 
+				Length 
+			</option> 
+			<option value="time"> 
+				Time 
+			</option> 
+		</select> 
+		<div class="container"> 
+			<div class="conversion"
+				id="temperature"> 
+				<h2 class="category-title"> 
+					Temperature 
+				</h2> 
+				<input type="number"
+					id="temperatureInput"
+					class="input"
+					placeholder="Enter value"> 
+				<select id="fromTemperatureUnit"
+						class="unit-select"> 
+					<option value="celsius"> 
+						Celsius 
+					</option> 
+					<option value="kelvin"> 
+						Kelvin 
+					</option> 
+					<option value="fahrenheit"> 
+						Fahrenheit 
+					</option> 
+				</select> 
+				<span class="arrow"></span> 
+				<select id="toTemperatureUnit"
+						class="unit-select"> 
+					<option value="celsius"> 
+						Celsius 
+					</option> 
+					<option value="kelvin"> 
+						Kelvin 
+					</option> 
+					<option value="fahrenheit"> 
+						Fahrenheit 
+					</option> 
+				</select> 
+				<button id="temperatureConvertBtn"
+						class="convert-button"> 
+					Convert 
+				</button> 
+				<div class="result"> 
+					<p id="temperatureResult"> 
+						Result will be 
+						displayed here 
+					</p> 
+				</div> 
+			</div> 
+			<div class="conversion"
+				id="area"> 
+				<h2 class="category-title"> 
+					Area 
+				</h2> 
+				<input type="number"
+					id="areaInput"
+					class="input"
+					placeholder="Enter value"> 
+				<select id="fromAreaUnit"
+						class="unit-select"> 
+					<option value="sqMeter"> 
+						Square Meter 
+					</option> 
+					<option value="sqKilometer"> 
+						Square Kilometer 
+					</option> 
+<!-- Add more area units here -->
+				</select> 
+				<span class="arrow"></span> 
+				<select id="toAreaUnit"
+						class="unit-select"> 
+					<option value="sqMeter"> 
+						Square Meter 
+					</option> 
+					<option value="sqKilometer"> 
+						Square Kilometer 
+					</option> 
+				</select> 
+				<button id="areaConvertBtn"
+						class="convert-button"> 
+					Convert 
+				</button> 
+				<div class="result"> 
+					<p id="areaResult"> 
+						Result will be 
+						displayed here 
+				</p> 
+				</div> 
+			</div> 
+			<div class="conversion" id="weight"> 
+				<h2 class="category-title"> 
+					Weight 
+				</h2> 
+				<input type="number"
+					id="weightInput"
+					class="input"
+					placeholder="Enter value"> 
+				<select id="fromWeightUnit"
+						class="unit-select"> 
+					<option value="gram"> 
+						Gram 
+					</option> 
+					<option value="kilogram"> 
+						Kilogram 
+					</option> 
+				</select> 
+				<span class="arrow"></span> 
+				<select id="toWeightUnit"
+						class="unit-select"> 
+					<option value="gram"> 
+						Gram 
+					</option> 
+					<option value="kilogram"> 
+						Kilogram 
+					</option> 
+				</select> 
+				<button id="weightConvertBtn"
+						class="convert-button"> 
+					Convert 
+				</button> 
+				<div class="result"> 
+					<p id="weightResult"> 
+						Result will be 
+						displayed here 
+					</p> 
+				</div> 
+			</div> 
+			<div class="conversion" id="length"> 
+				<h2 class="category-title"> 
+					Length 
+				</h2> 
+				<input type="number"
+					id="lengthInput"
+					class="input"
+					placeholder="Enter value"> 
+				<select id="fromLengthUnit"
+						class="unit-select"> 
+					<option value="meter"> 
+						Meter 
+					</option> 
+					<option value="kilometer"> 
+						Kilometer 
+					</option> 
+				</select> 
+				<span class="arrow"></span> 
+				<select id="toLengthUnit"
+						class="unit-select"> 
+					<option value="meter"> 
+						Meter 
+					</option> 
+					<option value="kilometer"> 
+						Kilometer 
+					</option> 
+				</select> 
+				<button id="lengthConvertBtn"
+						class="convert-button"> 
+					Convert 
+				</button> 
+				<div class="result"> 
+					<p id="lengthResult"> 
+						Result will be 
+						displayed here 
+				</p> 
+				</div> 
+			</div> 
+			<div class="conversion" id="time"> 
+				<h2 class="category-title"> 
+					Time 
+				</h2> 
+				<input type="number"
+					id="timeInput"
+					class="input"
+					placeholder="Enter value"> 
+				<select id="fromTimeUnit"
+						class="unit-select"> 
+					<option value="second"> 
+						Second 
+					</option> 
+					<option value="minute"> 
+						Minute 
+					</option> 
+				</select> 
+				<span class="arrow"></span> 
+				<select id="toTimeUnit"
+						class="unit-select"> 
+					<option value="second"> 
+						Second 
+					</option> 
+					<option value="minute"> 
+						Minute 
+					</option> 
+				</select> 
+				<button id="timeConvertBtn"
+						class="convert-button"> 
+					Convert 
+				</button> 
+				<div class="result"> 
+					<p id="timeResult"> 
+						Result will be 
+						displayed here 
+				</p> 
+				</div> 
+			</div> 
+		</div> 
+	</div> 
+	<script src="./script.js"></script> 
+</body> 
+
+</html>
