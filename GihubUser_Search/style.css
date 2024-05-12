@@ -55,6 +55,7 @@ h1:hover {
     background-color: #5764ca;
     border: 2px solid #00a136;
     border-radius: 7px;
+    font-size: 1rem;
     color: #333;
     font-weight: bold;
     padding: 10px;
@@ -62,6 +63,11 @@ h1:hover {
     transition: transform 0.3s ease-in-out;
     margin-bottom: 20px;
 
+}
+@media(max-width: 768px) {
+    #form button {
+        width: 80%;
+    }
 }
 .card { 
 	max-width: 50%; 

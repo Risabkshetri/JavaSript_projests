@@ -1,0 +1,161 @@
+* { 
+	padding: 0; 
+	margin: 0; 
+	box-sizing: border-box; 
+}
+
+body{
+	background:#2d3436;
+}
+
+#main { 
+	width: 100%; 
+	min-height: 100%; 
+	padding-bottom: 50px; 
+	background-color: #2d3436;
+	display: flex; 
+	flex-wrap: wrap; 
+	justify-content: center;
+	align-items: center;
+}
+input{
+	height: 40px;
+	width: 400px;
+	padding: 5px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+input:hover{
+	border: 3px solid #f0ec07;
+}
+
+
+.search_bar > button{
+	height: 40px;
+	width: 60px;
+	padding: 5px;
+	font-weight: bolder;
+	border-radius: 10px;
+
+}
+
+.search_bar > button:hover{
+	background-color: #2a07f0;
+	color: white;
+	border: 3px solid #e807f0;
+	transition: ease-in-out 0.01s;
+}
+
+.heading{
+	display: flex;
+	flex-direction: row;
+	align-items: end;
+	padding-right: 10px;
+
+
+}
+img{
+	height: 60px;
+	width: 60px;
+}
+h3{
+	color: white !important;
+	margin-bottom: 10px;
+}
+
+
+#addBtn { 
+	position: fixed; 
+	left: 18px; 
+	top: 10px; 
+	background-color: #07bdf0; 
+	color: white; 
+	padding: 10px; 
+	border: 0; 
+	outline: 0; 
+	border-radius: 5px; 
+} 
+#addBtn:hover {
+	background-color: #f0ec07;
+	color: black;
+	border: 3px solid #07bdf0;
+	transition: ease-in-out 0.01s;
+}
+.btn { 
+	display: flex; 
+	flex-direction: row-reverse;  
+	justify-content: end; 
+	align-items: end; 
+	background-color: #0e0d0d; 
+	margin-top: 0px;
+	border: 2px solid white; 
+	gap: 25%;
+}
+
+@media(max-width:600px){
+}
+
+@media(max-width:1100px){
+	.search_bar{
+		display: none;
+	}
+}
+ 
+
+.note { 
+	width: 380px; 
+	height: 260px; 
+	background-color: white; 
+	margin: 15px; 
+	margin-top: 55px; 
+	border-radius: 10px; 
+	margin-left: 20px; 
+	margin-bottom: 30px; 
+} 
+
+.icons { 
+	width: 100%; 
+	background-color: brown; 
+	color: white; 
+	padding: 5px; 
+	display: flex; 
+	justify-content: start; 
+	border-radius: 10px 10px 0px 0px; 
+}
+
+.icons i { 
+	padding: 5px; 
+	cursor: pointer; 
+} 
+
+
+.note textarea { 
+	border: none; 
+	width: 100%; 
+	height: 87%; 
+	resize: none; 
+	padding: 10px; 
+	font-size: 18px; 
+	border-radius: 15px; 
+	background-color: beige; 
+	border-radius: 0px 0px 10px 10px; 
+} 
+
+.title-div textarea { 
+	border-radius: 0px 0px 0px 0px; 
+	margin-bottom: -4px; 
+	background-color: #d7d0d8; 
+	font-weight: bolder; 
+	font-size: x-large; 
+}  
+
+.note textarea:focus { 
+	border: 0; 
+	outline: 0; 
+}
+
+@media(min-width: 600px) {
+	.hamburger_menu{
+		display:none;
+	}
+}
